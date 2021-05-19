@@ -1,0 +1,36 @@
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select panelClass="sort-select" [(ngModel)]="sort">
+      <mat-option value="name">Name</mat-option>
+      <mat-option value="-released">Released</mat-option>
+      <mat-option value="-added">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-updated">Uptated</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
+      <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="games">
+  <div class="game">
+    <div class="game-thumb-container">
+      <img
+        src="https://cdn2.unrealengine.com/Diesel%2Fblog%2Faccount-security-at-epic-games%2FEGS_Social_Update_News-2560x1440-128a69890d92407b815582c1deba54450e5645f9.jpg"
+        alt="thumbnail"
+        class="game-thumbnail"
+      />
+    </div>
+    <div class="game-description">
+      <p class="game-name"></p>
+      <div class="game-plataforms">
+        <img
+          src="https://www.einerd.com.br/wp-content/uploads/2017/03/photodune-9235903-game-m-16x91-890x501.jpg"
+          alt="slug"
+          class="game-plataform"
+        />
+      </div>
+    </div>
+  </div>
+</div>
