@@ -1,4 +1,5 @@
 export interface Game {
+  id: string;
   background_image: string;
   name: string;
   released: string;
@@ -7,7 +8,7 @@ export interface Game {
   description: string;
   metacritic: number;
   genres: Array<Genre>;
-  parent_plataforms: Array<ParentPlataform>;
+  parent_platforms: Array<ParentPlatform>;
   publishers: Array<Publisher>;
   ratings: Array<Rating>;
   screenshots: Array<Screeshot>;
@@ -18,8 +19,8 @@ interface Genre {
   name: string;
 }
 
-interface ParentPlataform {
-  plataform: {
+interface ParentPlatform {
+  platform: {
     name: string;
   };
 }
